@@ -1,0 +1,5 @@
+npx create-react-app tic-tac-toe
+
+npm start -> http://localhost:3000
+
+
