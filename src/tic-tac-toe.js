@@ -43,8 +43,9 @@
  * @author Paulo Roma based on {@link https://opensource.fb.com|Facebook Open Source}
  * @since 17/09/2021
  * @see <a href="../src/tic-tac-toe.js">source</a>
- * @see <a href="../tic-tac-toe.js">source compiled (Babel)</a>
+ * @see <a href="../package.json">package.json</a>
  * @see <a href="/cwdc/14-react/tic-tac-toe/tic-tac-toe.html">link</a>
+ * @see <a href="http://localhost:3000">link node</a>
  * @see https://reactjs.org/tutorial/tutorial.html#overview
  * @see https://flarnie.github.io/react/tutorial/tutorial.html
  * @see https://reactjs.org/docs/react-dom.html
@@ -54,10 +55,10 @@
  * @see <img src="../tic-tac-toe.png">
  */
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import props from 'prop-types';
-import './tic-tac-toe.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import props from "prop-types";
+import "./tic-tac-toe.css";
 
 /**
  * <p>A function component.</p>
