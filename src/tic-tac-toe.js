@@ -12,15 +12,7 @@
  * or vertical row is the winner.
  * It is a solved game with a forced draw assuming best play from both players.
  *
- * <p>To run {@link https://babeljs.io Babel} on the fly,
- * and save the "compiled" output when the source has changed:</p>
- * <ul>
- *    <li>npm init -y</li>
- *    <li>npm install babel-cli@6 babel-preset-react-app@3</li>
- *    <li>npx babel --watch src --out-dir . --presets react-app/prod &</li>
- * </ul>
- *
- * Note: using React without {@link https://nodejs.dev/en/ nodejs}
+ * <p><b>Important remark</b>: using React without {@link https://nodejs.dev/en/ nodejs}
  * is a great way to try React, but it's not suitable for production.<br>
  * It slowly compiles {@link https://react.dev/learn/javascript-in-jsx-with-curly-braces JSX}
  * with Babel in the browser, and uses a large development build of React.
