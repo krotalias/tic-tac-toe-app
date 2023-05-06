@@ -40,11 +40,36 @@
  * Finally, when an application is ready for the world,
  * it must be {@link https://create-react-app.dev/docs/deployment/ deployed} somehow.
  *
+ * <p>Usage: </p>
+ * <ul>
+ *  <li>To install jsdoc and yarn:</li>
+ *  <ul>
+ *    <li>sudo npm install --global yarn</li>
+ *    <li>sudo npm install -g jsdoc</li>
+ *  </ul>
+ *  <li>To run react in the browser, then run {@link https://babeljs.io Babel} on the fly,
+ *  and save the "compiled" output when the source has changed:</li>
+ *  <ul>
+ *    <li>npm init -y</li>
+ *    <li>npm install babel-cli@6 babel-preset-react-app@3</li>
+ *    <li>npx babel --watch src --out-dir . --presets react-app/prod &</li>
+ *  </ul>
+ *
+ *  <li>To run the version with modules and Node.js version {@link https://nodejs.org/en/blog/release/v16.16.0 16}
+ *  or {@link https://nodejs.org/en/blog/release/v18.16.0 18}:</li>
+ *  <ul>
+ *    <li>cd counter-app</li>
+ *    <li>{@link https://www.npmjs.com npm} or {@link https://yarnpkg.com yarn} install</li>
+ *    <li>{@link https://www.npmjs.com/package/react npm} or {@link https://yarnpkg.com/package/react yarn} start</li>
+ *  </ul>
+ * </ul>
+ *
  * @author Paulo Roma based on {@link https://opensource.fb.com|Facebook Open Source}
  * @since 17/09/2021
  * @see <a href="../src/tic-tac-toe.js">source</a>
  * @see <a href="../package.json">package.json</a>
- * @see <a href="/cwdc/14-react/tic-tac-toe/tic-tac-toe.html">link</a>
+ * @see <a href="/cwdc/14-react/tic-tac-toe/tic-tac-toe.html">link browser</a>
+ * @see <a href="https://tic-tac-toe-app-self.vercel.app">link vercel</a>
  * @see <a href="http://localhost:3000">link node</a>
  * @see https://reactjs.org/tutorial/tutorial.html#overview
  * @see https://flarnie.github.io/react/tutorial/tutorial.html
