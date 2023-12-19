@@ -75,7 +75,7 @@
  * @see https://reactjs.org/docs/react-api.html#createelement
  * @see https://reactjs.org/docs/add-react-to-a-website.html
  * @see https://legacy.reactjs.org/docs/faq-build.html
- * @see <iframe width="380" height=280" src="https://tic-tac-toe-app-self.vercel.app"></iframe>
+ * @see <iframe width="380" height=320" src="https://tic-tac-toe-app-self.vercel.app"></iframe>
  */
 
 import React from "react";
