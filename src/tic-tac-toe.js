@@ -66,7 +66,7 @@
  * @since 17/09/2021
  * @see <a href="../src/tic-tac-toe.js">source</a>
  * @see <a href="../package.json">package.json</a>
- * @see <a href="/cwdc/14-react/tic-tac-toe/tic-tac-toe.html">link browser</a>
+ * @see <a href="https://krotalias.github.io/cwdc/14-react/tic-tac-toe/tic-tac-toe.html">link browser</a>
  * @see <a href="https://tic-tac-toe-app-self.vercel.app">link vercel</a>
  * @see <a href="http://localhost:3000">link node</a>
  * @see https://reactjs.org/tutorial/tutorial.html#overview
@@ -75,13 +75,49 @@
  * @see https://reactjs.org/docs/react-api.html#createelement
  * @see https://reactjs.org/docs/add-react-to-a-website.html
  * @see https://legacy.reactjs.org/docs/faq-build.html
- * @see <img src="../tic-tac-toe.png">
+ * @see <iframe width="380" height=280" src="https://tic-tac-toe-app-self.vercel.app"></iframe>
  */
 
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import props from "prop-types";
 import "./tic-tac-toe.css";
+import vercel from "./vercel.png";
+
+/**
+ * React module.
+ * @external react
+ * @see https://legacy.reactjs.org/docs/react-api.html
+ */
+
+/**
+ * React DOM module.
+ * @external react-dom
+ * @see https://legacy.reactjs.org/docs/react-dom.html
+ */
+
+/**
+ * Create React App is a comfortable environment for learning React,
+ * and is the best way to start building a new single-page application in React.
+ * It sets up your development environment so that you can use the latest JavaScript features,
+ * provides a nice developer experience, and optimizes your app for production.
+ * @class React
+ * @memberof external:react
+ * @see https://legacy.reactjs.org/docs/create-a-new-react-app.html
+ */
+
+/**
+ * React lets you define components as classes or functions.
+ * Components defined as classes currently provide more features which are described in detail on this page.
+ * To define a React component class, you need to extend React.Component.
+ *
+ * <p>The only method you must define in a React.Component subclass is called render().
+ * All the other methods described on this page are optional.</p>
+ * @class React.Component
+ * @memberof React
+ * @see https://legacy.reactjs.org/docs/react-component.html
+ * @see https://react.dev/reference/react/Component
+ */
 
 /**
  * <p>A function component.</p>
@@ -122,7 +158,8 @@ function Square({ value, onClick } = props) {
  * move the state upwards so that it lives in the parent component.
  * The parent can then pass the state back down to the children via props,
  * so that the child components are always in sync with each other and with the parent.
- * All of this is possible because of {@link https://levelup.gitconnected.com/unlocking-the-power-of-closures-in-react-components-ba5903f4710a closures}.
+ * All of this is possible because of
+ * {@link https://levelup.gitconnected.com/unlocking-the-power-of-closures-in-react-components-ba5903f4710a closures}.
  * @extends {React.Component}
  */
 class Board extends React.Component {
@@ -160,6 +197,7 @@ class Board extends React.Component {
    * Renders the 9 squares of the board.
    * @returns {HTMLDivElement} a &lt;div&gt; tag with a 3 × 3 grid layout, with 3
    * buttons per row, each of which with value 'X', 'O' or null.
+   * @memberof React.Component
    */
   render() {
     return (
@@ -343,6 +381,7 @@ class Game extends React.Component {
    *
    * @returns {HTMLDivElement} a tag &lt;game&gt;, with the 3 × 3 {@link Board} grid layout and
    * an ordered list of buttons for the time travel.
+   * @memberof React.Component
    * @see https://www.w3schools.com/react/react_props.asp
    */
   render() {
@@ -386,6 +425,11 @@ class Game extends React.Component {
      */
     return (
       <div className="game">
+        <div className="game-logo">
+          <a href="https://vercel.com/krotalias/tic-tac-toe-app">
+            <img src={vercel} style={{ height: "32px" }} alt="vercel" />
+          </a>
+        </div>
         <div className="game-board">
           <div>
             <p style={{ textAlign: "center" }}>{status}</p>
@@ -407,11 +451,14 @@ class Game extends React.Component {
 // ========================================
 
 /**
- * Render a React element into the DOM in the supplied container and
- * return a reference to the component (or returns null for stateless components).
- * @see https://reactjs.org/docs/react-dom.html#render
+ * Create a root to display React components inside a browser DOM node.
+ * After you’ve created a root, you need to call root.render to display a React component inside of it.
+ * @method createRoot
+ * @memberof external:react-dom
+ * @see https://react.dev/reference/react-dom/client/createRoot
  */
-ReactDOM.render(<Game />, document.getElementById("tic-tac-toe"));
+const root = createRoot(document.getElementById("tic-tac-toe"));
+root.render(<Game />);
 
 /**
  * Given an array of 9 squares, this function will check
