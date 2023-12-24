@@ -53,8 +53,8 @@
  *    <li>npx babel --watch src --out-dir . --presets @babel/preset-react &</li>
  *  </ul>
  *
- *  <li>To run the version with modules and Node.js version {@link https://nodejs.org/en/blog/release/v16.16.0 16}
- *  or {@link https://nodejs.org/en/blog/release/v18.16.0 18}:</li>
+ *  <li>To run the version with modules and Node.js version
+ *  {@link https://nodejs.org/en/blog/release/v18.16.0 18}:</li>
  *  <ul>
  *    <li>cd tic-tac-toe-app</li>
  *    <li>{@link https://www.npmjs.com npm} or {@link https://yarnpkg.com yarn} install</li>
