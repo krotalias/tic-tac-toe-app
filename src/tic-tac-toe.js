@@ -39,11 +39,11 @@
  * it must be {@link https://create-react-app.dev/docs/deployment/ deployed} somehow.
  *
  * <p>Usage: </p>
- * <ul>
- *  <li>To install jsdoc and yarn:</li>
+ *  <li>To install {@link https://www.npmjs.com/package/jsdoc jsdoc}, yarn and {@link https://pnpm.io pnpm}:</li>
  *  <ul>
  *    <li>sudo npm install --global yarn</li>
  *    <li>sudo npm install -g jsdoc</li>
+ *    <li>sudo npm install -g pnpm</li>
  *  </ul>
  *  <li>To run react in the browser, then run {@link https://babeljs.io Babel} on the fly,
  *  and save the "compiled" output when the source has changed:</li>
@@ -54,7 +54,8 @@
  *  </ul>
  *
  *  <li>To run the version with modules and Node.js version
- *  {@link https://nodejs.org/en/blog/release/v18.16.0 18}:</li>
+ *  {@link https://nodejs.org/en/blog/release/v18.19.0 18} or
+ *  {@link https://nodejs.org/en/blog/release/v20.10.0 20}:</li>
  *  <ul>
  *    <li>cd tic-tac-toe-app</li>
  *    <li>{@link https://www.npmjs.com npm} or {@link https://yarnpkg.com yarn} install</li>
