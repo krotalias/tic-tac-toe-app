@@ -15,7 +15,7 @@
  * <p>This project was bootstrapped with
  * {@link https://create-react-app.dev/docs/getting-started Create React App}:</p>
  * <ul>
- *    <li>yarn create react-app counter-app</li>
+ *    <li>yarn create react-app tic-tac-toe-app</li>
  * </ul>
  *
  * <p><b>Important remark</b>: using React without {@link https://nodejs.dev/en/ nodejs}
@@ -56,9 +56,19 @@
  *  <li>To run the version with modules and Node.js version {@link https://nodejs.org/en/blog/release/v16.16.0 16}
  *  or {@link https://nodejs.org/en/blog/release/v18.16.0 18}:</li>
  *  <ul>
- *    <li>cd counter-app</li>
+ *    <li>cd tic-tac-toe-app</li>
  *    <li>{@link https://www.npmjs.com npm} or {@link https://yarnpkg.com yarn} install</li>
  *    <li>{@link https://www.npmjs.com/package/react npm} or {@link https://yarnpkg.com/package/react yarn} start</li>
+ *  </ul>
+ *
+ *  <li>To use vercel {@link https://vercel.com/docs/cli cli} to run
+ *  vercel {@link https://vercel.com/docs/cli/dev dev} before deploying:</li>
+ *  <ul>
+ *    <li>cd tic-tac-toe-app</li>
+ *    <li>{@link https://pnpm.io pnpm} i -g vercel or
+ *        {@link https://pnpm.io pnpm} i -g vercel@latest (to update to the latest version)</li>
+ *    <li>{@link https://www.npmjs.com npm} or {@link https://yarnpkg.com yarn} install</li>
+ *    <li>{@link https://vercel.com vercel} dev</li>
  *  </ul>
  * </ul>
  *
