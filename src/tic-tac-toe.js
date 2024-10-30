@@ -54,8 +54,9 @@
  *  </ul>
  *
  *  <li>To run the version with modules and Node.js version
- *  {@link https://nodejs.org/en/blog/release/v18.19.0 18} or
- *  {@link https://nodejs.org/en/blog/release/v20.10.0 20}:</li>
+ *  {@link https://nodejs.org/en/blog/release/v18.19.0 18},
+ *  {@link https://nodejs.org/en/blog/release/v20.18.0 20} or
+ *  {@link https://nodejs.org/en/blog/release/v22.11.0 22}:</li>
  *  <ul>
  *    <li>cd tic-tac-toe-app</li>
  *    <li>{@link https://www.npmjs.com npm} or {@link https://yarnpkg.com yarn} install</li>
@@ -96,7 +97,14 @@ import "./tic-tac-toe.css";
 import vercel from "./vercel.png";
 
 /**
- * React module.
+ * <p>React is the library for web and native user interfaces.</p>
+ * React lets you build user interfaces out of individual pieces called
+ * {@link React.Component components} written in JavaScript.
+ *
+ * <p>Elements are the smallest building blocks of React apps.
+ * An {@link https://react.dev/reference/react/createElement element}
+ * describes what you want to see on the screen.</p>
+ *
  * @external react
  * @see {@link https://react.dev/reference/react React Reference Overview}
  * @see {@link https://legacy.reactjs.org/docs/react-api.html React Top-Level API}
@@ -106,20 +114,40 @@ import vercel from "./vercel.png";
  * React DOM module.
  * @external react-dom
  * @see {@link https://react.dev/reference/react-dom React DOM APIs}
+ * @see {@link https://react.dev/reference/react React Reference Overview}
  */
 
 /**
- * Create React App is a comfortable environment for learning React,
- * and is the best way to start building a new single-page application in React.
- * It sets up your development environment so that you can use the latest JavaScript features,
- * provides a nice developer experience, and optimizes your app for production.
- * @class React
+ * <p>You don’t need to install {@link https://react.dev/learn/installation#try-react anything}
+ * to play with React.</p>
+ *
+ * To try React locally on your computer, download this
+ * {@link https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html HTML page}
+ * and open it in your editor and in your browser!
+ *
+ * <p>The other option is {@link https://react.dev/learn/add-react-to-an-existing-project seting up}
+ * a modular JavaScript environment,
+ * e.g., by using {@link https://vite.dev/ Vite} or
+ * {@link https://create-react-app.dev/ CRA}.
+ * However, React's new documentation, released on March 16, 2023,
+ * no longer recommends CRA as the go-to solution for creating React applications.</p>
+ *
+ * <p>Nonetheless, this application still uses CRA.</p>
+ *
+ * @namespace React
  * @memberof external:react
  * @see {@link https://react.dev/learn/start-a-new-react-project Start a New React Project}
  * @see {@link https://legacy.reactjs.org/docs/create-a-new-react-app.html Create a New React App}
+ * @see {@link https://www.epicweb.dev/why-i-wont-use-nextjs Why I Won't Use Next.js}
  */
 
 /**
+ * <p>{@link https://react.dev/reference/react/Component Component}
+ * is the base class for the React components
+ * defined as JavaScript classes.
+ * Class components are still supported by React,
+ * but we don’t recommend using them in new code.</p>
+ *
  * React lets you define components as classes or functions.
  * Components defined as classes currently provide more features which are described in detail on this page.
  * To define a React component class, you need to extend React.Component.
@@ -144,10 +172,11 @@ import vercel from "./vercel.png";
  * {@link https://stackoverflow.com/questions/42522515/what-are-react-controlled-components-and-uncontrolled-components controlled components}.
  * The Board has full control over them.
  *
+ * @component
  * @param {Object} props React Props.
  * @param {Number} props.value an index ∈ [0..8].
  * @param {Game#handleClick} props.onClick button onClick callback.
- * @returns {HTMLButtonElement} a &lt;button&gt; tag with the given props.
+ * @returns {React.JSX.Element} a &lt;button&gt; tag with the given props.
  * @see {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment Destructuring assignment}
  * @see {@link https://michael-karen.medium.com/getting-started-with-modern-javascript-destructuring-assignment-140d0adc37da Getting Started with Modern JavaScript — Destructuring}
  * @see {@link https://javascript.info/destructuring-assignment Destructuring assignment}
@@ -207,10 +236,9 @@ class Board extends React.Component {
   }
 
   /**
-   * Renders the 9 squares of the board.
-   * @returns {HTMLDivElement} a &lt;div&gt; tag with a 3 × 3 grid layout, with 3
+   * {@link Board#renderSquare Renders} the 9 squares of the board.
+   * @returns {React.JSX.Element} a &lt;div&gt; tag with a 3 × 3 grid layout, with 3
    * buttons per row, each of which with value 'X', 'O' or null.
-   * @memberof React.Component
    */
   render() {
     return (
@@ -392,9 +420,8 @@ class Game extends React.Component {
   /**
    * Renders the grid layout and an ordered list of buttons for each move in this game history.
    *
-   * @returns {HTMLDivElement} a tag &lt;game&gt;, with the 3 × 3 {@link Board} grid layout and
+   * @returns {React.JSX.Element} a tag &lt;game&gt;, with the 3 × 3 {@link Board} grid layout and
    * an ordered list of buttons for the time travel.
-   * @memberof React.Component
    * @see {@link https://www.w3schools.com/react/react_props.asp React Props}
    */
   render() {
@@ -409,7 +436,8 @@ class Game extends React.Component {
      *    1: {$$typeof: Symbol(react.element), type: "li", key: "1", ref: null, props: Object, …}
      *    ...
      * </pre>
-     * @type {Array<react.element>}
+     * @type {Array<React.JSX.Element>}
+     * @memberof Game#
      */
     const moves = history.map((step, move) => {
       //                      go to   #move     or   when move is 0
