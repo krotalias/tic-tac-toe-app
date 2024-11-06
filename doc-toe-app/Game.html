@@ -28,21 +28,7 @@
 
 <header>
     
-        <h2><span class="attribs"><span class="type-signature"></span></span>Game<span class="signature">(props)</span><span class="type-signature"></span></h2>
-        
-            <div class="class-description"><p>Game class.</p>
-
-To “remember” things, components use <a href="https://legacy.reactjs.org/docs/faq-state.html">state</a>.
-React components can have state by setting <strong>this.state</strong>
-in their constructors, which should be considered as private
-to a React component that it’s defined in.
-
-<p>To add a Time Travel, to “go back in time” to the previous moves in the game,
-we need a History of Moves.</p>
-
-We’ll store the past squares arrays in another array called <a href="Game.html#state">history</a>.
-The history array represents all board states,
-from the first to the last move.</div>
+        <h2><span class="attribs"><span class="type-signature"></span></span>Game<span class="signature">()</span><span class="type-signature"></span></h2>
         
     
 </header>
@@ -53,11 +39,9 @@ from the first to the last move.</div>
         
 
     
-    <h2>Constructor</h2>
-    
 
     
-    <h4 class="name" id="Game"><span class="type-signature"></span>new Game<span class="signature">(props)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Game"><span class="type-signature"></span>new Game<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
@@ -65,17 +49,19 @@ from the first to the last move.</div>
 
 
 <div class="description">
-    <ul>
-   <li>Set up the initial state of the game: board configuration,
-   number of moves and if "X" is the next to play.</li>
-   <li>Set the Board’s initial state to contain an array of 9 nulls
-   corresponding to the 9 squares.</li>
- </ul>
-<p>Conceptually, components are like JavaScript functions:</p>
-<ul>
-   <li>They accept arbitrary inputs (called “props”) and </li>
-   <li>return React elements describing what should appear on the screen.</li>
-</ul>
+    <p>Game class.</p>
+
+To “remember” things, components maintain a <a href="https://legacy.reactjs.org/docs/faq-state.html">state</a>.
+React components can have state by setting <strong>this.state</strong>
+in their constructors, which should be considered as private
+to a React component that it’s defined in.
+
+<p>To add a Time Travel, to “go back in time” to the previous moves in the game,
+we need a History of Moves.</p>
+
+We’ll store the past squares arrays in another array called history.
+The history array represents all board states,
+from the first to the last move.
 </div>
 
 
@@ -84,55 +70,6 @@ from the first to the last move.</div>
 
 
 
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>props</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">component input.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -168,19 +105,12 @@ from the first to the last move.</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line281">line 281</a>
+        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line294">line 294</a>
     </li></ul></dd>
     
 
     
 
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://reactjs.org/docs/react-component.html">React.Component</a></li>
-        </ul>
-    </dd>
     
 
     
@@ -207,17 +137,6 @@ from the first to the last move.</div>
 
     
     </div>
-
-    
-        <h3 class="subsection-title">Extends</h3>
-
-        
-
-
-    <ul>
-        <li><a href="React.Component.html">React.Component</a>.&lt;Props></li>
-    </ul>
-
 
     
 
@@ -295,200 +214,7 @@ from the first to the last move.</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line442">line 442</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-        
-            
-<h4 class="name" id="state"><span class="type-signature"></span>state<span class="type-signature"> :Object</span></h4>
-
-
-
-
-<div class="description">
-    The state of the game.
-</div>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type">Object</span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>state.history</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Array.&lt;Object.&lt;{squares: Array.&lt;String>}>></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">history array.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>state.stepNumber</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">step number.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>state.xIsNext</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Boolean</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">player turn.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>state.setState</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="global.html#state_setter">state_setter</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">setter - change state.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line311">line 311</a>
+        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line486">line 486</a>
     </li></ul></dd>
     
 
@@ -507,453 +233,6 @@ from the first to the last move.</div>
         
     
 
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="handleClick"><span class="type-signature"></span>handleClick<span class="signature">(i)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>The <a href="global.html#Square">Square</a> calls this.handleClick(i) when clicked.</p>
-
-<p>Each time a player moves, <a href="Game.html#state">xIsNext</a> (a boolean) will be flipped to determine
-which player goes next, and the game’s state will be saved.</p>
-
-<p>If you “go back in time” and then make a new move from that point,
-you only want to keep the history up to that point.
-Instead of adding nextSquares after all items in history,
-you’ll add it after all items in history.slice(0, stepNumber + 1),
-so that you’re only keeping that portion of the old history.</p>
-
-<p>Note how in handleClick, we call
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice()</a>
-to create a copy of the squares array, instead of modifying the existing array.</p>
-
-<p>To explain why, we need to discuss
-<a href="https://blog.devgenius.io/mutable-and-immutable-in-javascript-78a3cbc6187c">immutability</a>,
-and why immutability is important to learn.</p>
-
-<p>There are generally two approaches to changing data:</p>
-<ol>
- <li>The first approach is to mutate the data, by directly changing the data’s values.</li>
- <li>The second approach is to replace the data with a new copy, which has the desired changes.</li>
-</ol>
-
-Detecting changes in immutable objects is considerably easier:
-<ul>
- <li>if the immutable object that is being referenced is different than the previous one,
- then the object has changed.</li>
-</ul>
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>i</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">an index ∈ [0..8] corresponding to the button clicked.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line358">line 358</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://reactjs.org/docs/react-component.html#setstate">setState()</a></li>
-        
-            <li><a href="https://www.codecademy.com/resources/docs/javascript/arrays/slice">.slice()</a></li>
-        </ul>
-    </dd>
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="jumpTo"><span class="type-signature"></span>jumpTo<span class="signature">(step)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    <p>Go to the step-th move in the game.</p>
-
-<p>Enqueues changes to the component state and tells React that this component and
-its children need to be re-rendered with the updated state.</p>
-
-This is the primary method you use to update the user interface in response
-to event handlers and server responses.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>step</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">position into the history array.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line413">line 413</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://react.dev/reference/react/useState">useState</a></li>
-        </ul>
-    </dd>
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="render"><span class="type-signature"></span>render<span class="signature">()</span><span class="type-signature"> &rarr; {React.JSX.Element}</span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Renders the grid layout and an ordered list of buttons for each move in this game history.
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line427">line 427</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://www.w3schools.com/react/react_props.asp">React Props</a></li>
-        </ul>
-    </dd>
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-<div class="param-desc">
-    a tag &lt;game&gt;, with the 3 × 3 <a href="Board.html">Board</a> grid layout and
-an ordered list of buttons for the time travel.
-</div>
-
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">React.JSX.Element</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-
-
-        
     
 
     
@@ -969,13 +248,13 @@ an ordered list of buttons for the time travel.
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Externals</h3><ul><li><a href="external-react.html">react</a></li><li><a href="external-react-dom.html">react-dom</a></li></ul><h3>Namespaces</h3><ul><li><a href="external-react.React.html">React</a></li></ul><h3>Classes</h3><ul><li><a href="Board.html">Board</a></li><li><a href="Game.html">Game</a></li><li><a href="React.Component.html">Component</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Square">Square</a></li><li><a href="global.html#calculateWinner">calculateWinner</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Externals</h3><ul><li><a href="external-react.html">react</a></li><li><a href="external-react-dom.html">react-dom</a></li></ul><h3>Namespaces</h3><ul><li><a href="React.html">React</a></li></ul><h3>Classes</h3><ul><li><a href="Board.html">Board</a></li><li><a href="Game.html">Game</a></li><li><a href="React.Component.html">Component</a></li><li><a href="module.exports_module.exports.html">exports</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Row">Row</a></li><li><a href="global.html#Square">Square</a></li><li><a href="global.html#cTable">cTable</a></li><li><a href="global.html#calculateWinner">calculateWinner</a></li><li><a href="global.html#handleClick">handleClick</a></li><li><a href="global.html#jumpTo">jumpTo</a></li><li><a href="global.html#render">render</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Wed Oct 30 2024 09:48:27 GMT-0300 (Brasilia Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Wed Nov 06 2024 06:33:56 GMT-0300 (Brasilia Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>

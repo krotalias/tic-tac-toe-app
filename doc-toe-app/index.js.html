@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: External: react</title>
+    <title>JSDoc: Source: index.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,114 +17,55 @@
 
 <div id="main">
 
-    <h1 class="page-title">External: react</h1>
+    <h1 class="page-title">Source: index.js</h1>
 
     
 
 
 
-
-<section>
-
-<header>
     
-        <h2>react</h2>
-        
-    
-</header>
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @file
+ *
+ * Summary.
+ * &lt;p>Tic tac toe.&lt;/p>
+ *
+ * You will build a small tic-tac-toe game during this tutorial.
+ * This tutorial does not assume any existing React knowledge.
+ * The techniques you’ll learn in the tutorial are fundamental to building any React app,
+ * and fully understanding it will give you a deep understanding of React.
+ *
+ * @author Paulo Roma
+ * @since 05/11/2024
+ * @see &lt;a href="https://raw.githubusercontent.com/krotalias/tic-tac-toe/main/src/index.jsx">source&lt;/a>
+ * @see &lt;a href="https://krotalias.github.io/tic-tac-toe/">link&lt;/a>
+ * @see {@link https://react.dev/learn/tutorial-tic-tac-toe Tutorial: Tic-Tac-Toe}
+ */
 
-<article>
-    <div class="container-overview">
-    
-        
-            <div class="description"><p>React is the library for web and native user interfaces.</p>
-React lets you build user interfaces out of individual pieces called
-<a href="React.Component.html">components</a> written in JavaScript.
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import Game from "./tic-tac-toe";
+import "./tic-tac-toe.css";
 
-<p>Elements are the smallest building blocks of React apps.
-An <a href="https://react.dev/reference/react/createElement">element</a>
-describes what you want to see on the screen.</p></div>
-        
+/**
+ * Create a root to display React components inside a browser DOM node.
+ * After you’ve created a root, you need to call root.render to display a React component inside of it.
+ * @method createRoot
+ * @memberof external:react-dom
+ * @see {@link https://react.dev/reference/react-dom/client/createRoot createRoot}
+ */
+const root = createRoot(document.getElementById("tic-tac-toe"));
 
-        
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line97">line 97</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-    <dt class="tag-see">See:</dt>
-    <dd class="tag-see">
-        <ul>
-            <li><a href="https://react.dev/reference/react">React Reference Overview</a></li>
-        
-            <li><a href="https://legacy.reactjs.org/docs/react-api.html">React Top-Level API</a></li>
-        </ul>
-    </dd>
-    
-
-    
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
-</section>
+root.render(
+  &lt;StrictMode>
+    &lt;Game />
+  &lt;/StrictMode>,
+);
+</code></pre>
+        </article>
+    </section>
 
 
 

@@ -94,9 +94,316 @@
     
 
     
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="cTable"><span class="type-signature">(constant) </span>cTable<span class="type-signature"> :Object.&lt;String, String></span></h4>
+
+
+
+
+<div class="description">
+    Color table for winner color and background.
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object.&lt;String, String></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line165">line 165</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+        
+    
 
     
         <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="Row"><span class="type-signature"></span>Row<span class="signature">(props)</span><span class="type-signature"> &rarr; {React.JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Function component to render a row of the board.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>props</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">React Props.
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>arr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">three row indices.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>renderSquare</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">function for rendering a square.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line213">line 213</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    &lt;div&gt; tag with three <a href="Board.html#renderSquare">squares</a>.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">React.JSX.Element</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
 
         
             
@@ -222,13 +529,59 @@ The Board has full control over them.
 
         <tr>
             
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">square color.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>backg</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">square background color.</td>
+        </tr>
+
+    
+
+        <tr>
+            
                 <td class="name"><code>onClick</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Game.html#handleClick">Game#handleClick</a></span>
+<span class="param-type">Game#handleClick</span>
 
 
             
@@ -286,7 +639,7 @@ The Board has full control over them.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line184">line 184</a>
+        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line194">line 194</a>
     </li></ul></dd>
     
 
@@ -355,7 +708,7 @@ The Board has full control over them.
     
 
     
-    <h4 class="name" id="calculateWinner"><span class="type-signature"></span>calculateWinner<span class="signature">(squares)</span><span class="type-signature"> &rarr; {String}</span></h4>
+    <h4 class="name" id="calculateWinner"><span class="type-signature"></span>calculateWinner<span class="signature">(squares)</span><span class="type-signature"> &rarr; {Object.&lt;winner:String, line:Array.&lt;Number>>}</span></h4>
     
 
     
@@ -416,7 +769,7 @@ for a winner and return 'X', 'O', or null as appropriate.
 
             
 
-            <td class="description last">a given array of 9 squares.</td>
+            <td class="description last">a given array with 9 "X" / "O".</td>
         </tr>
 
     
@@ -457,7 +810,7 @@ for a winner and return 'X', 'O', or null as appropriate.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line511">line 511</a>
+        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line546">line 546</a>
     </li></ul></dd>
     
 
@@ -486,7 +839,8 @@ for a winner and return 'X', 'O', or null as appropriate.
 
         
 <div class="param-desc">
-    <p>the winner: "X", "O", or null if there is not a winner.</p>
+    the winner: "X" or "O", and the configuration: line, column or diagonal, <br>
+or null, if there is no winner.
 </div>
 
 
@@ -497,7 +851,465 @@ for a winner and return 'X', 'O', or null as appropriate.
     </dt>
     <dd>
         
-<span class="param-type">String</span>
+<span class="param-type">Object.&lt;winner:String, line:Array.&lt;Number>></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="handleClick"><span class="type-signature"></span>handleClick<span class="signature">(i)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>The <a href="global.html#Square">Square</a> calls this.handleClick(i) when clicked.</p>
+
+<p>Each time a player moves, xIsNext (a boolean) will be flipped to determine
+which player goes next, and the game’s state will be saved.</p>
+
+<p>If you “go back in time” and then make a new move from that point,
+you only want to keep the history up to that point.
+Instead of adding nextSquares after all items in history,
+you’ll add it after all items in history.slice(0, stepNumber + 1),
+so that you’re only keeping that portion of the old history.</p>
+
+<p>Note how in handleClick, we call
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice">slice()</a>
+to create a copy of the squares array, instead of modifying the existing array.</p>
+
+<p>To explain why, we need to discuss
+<a href="https://blog.devgenius.io/mutable-and-immutable-in-javascript-78a3cbc6187c">immutability</a>,
+and why immutability is important to learn.</p>
+
+<p>There are generally two approaches to changing data:</p>
+<ol>
+ <li>The first approach is to mutate the data, by directly changing the data’s values.</li>
+ <li>The second approach is to replace the data with a new copy, which has the desired changes.</li>
+</ol>
+
+Detecting changes in immutable objects is considerably easier:
+<ul>
+ <li>if the immutable object that is being referenced is different than the previous one,
+ then the object has changed.</li>
+</ul>
+
+<ul>
+<li>When you set state in React, a new value must be passed or
+React will bail-out and not *re-render your component.
+React uses something similar to === to compare the old and new state
+to see if they're the same.</li>
+</ul>
+<ul>
+<li>It does shallow equality checks and this is why objects and arrays
+cannot simply be mutated to create a state change because a
+mutation will not create a new reference for React to notice a change.
+React requires immutability because you'll create a whole new copy
+of objects and arrays
+with your changes in order to satisfy a shallow equality check.</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>i</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">an index ∈ [0..8] corresponding to the button clicked.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line402">line 402</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://reactjs.org/docs/react-component.html#setstate">setState()</a></li>
+        
+            <li><a href="https://www.codecademy.com/resources/docs/javascript/arrays/slice">.slice()</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="jumpTo"><span class="type-signature"></span>jumpTo<span class="signature">(step)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    <p>Go to the step-th move in the game.</p>
+
+<p>Enqueues changes to the component state and tells React that this component and
+its children need to be re-rendered with the updated state.</p>
+
+This is the primary method you use to update the user interface in response
+to event handlers and server responses.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>step</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">position into the history array.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line457">line 457</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://react.dev/reference/react/useState">useState</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="render"><span class="type-signature"></span>render<span class="signature">()</span><span class="type-signature"> &rarr; {React.JSX.Element}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Renders the grid layout and an ordered list of buttons for each move in this game history.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line471">line 471</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="https://www.w3schools.com/react/react_props.asp">React Props</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    a tag &lt;game&gt;, with the 3 × 3 <a href="Board.html">Board</a> grid layout and
+an ordered list of buttons for the time travel.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">React.JSX.Element</span>
 
 
     </dd>
@@ -529,7 +1341,7 @@ for a winner and return 'X', 'O', or null as appropriate.
 
 
 <div class="description">
-    <p>Add the new configuration (another square array) to <a href="Game.html#state">history</a>.</p>
+    <p>Add the new configuration (another square array) to history.</p>
 <pre>
 History: Array (5) = $2
  0 {squares: Array}
@@ -588,7 +1400,7 @@ React automatically updates the child components inside of it too.
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line371">line 371</a>
+        <a href="tic-tac-toe.js.html">tic-tac-toe.js</a>, <a href="tic-tac-toe.js.html#line415">line 415</a>
     </li></ul></dd>
     
 
@@ -641,13 +1453,13 @@ React automatically updates the child components inside of it too.
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Externals</h3><ul><li><a href="external-react.html">react</a></li><li><a href="external-react-dom.html">react-dom</a></li></ul><h3>Namespaces</h3><ul><li><a href="external-react.React.html">React</a></li></ul><h3>Classes</h3><ul><li><a href="Board.html">Board</a></li><li><a href="Game.html">Game</a></li><li><a href="React.Component.html">Component</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Square">Square</a></li><li><a href="global.html#calculateWinner">calculateWinner</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Externals</h3><ul><li><a href="external-react.html">react</a></li><li><a href="external-react-dom.html">react-dom</a></li></ul><h3>Namespaces</h3><ul><li><a href="React.html">React</a></li></ul><h3>Classes</h3><ul><li><a href="Board.html">Board</a></li><li><a href="Game.html">Game</a></li><li><a href="React.Component.html">Component</a></li><li><a href="module.exports_module.exports.html">exports</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Row">Row</a></li><li><a href="global.html#Square">Square</a></li><li><a href="global.html#cTable">cTable</a></li><li><a href="global.html#calculateWinner">calculateWinner</a></li><li><a href="global.html#handleClick">handleClick</a></li><li><a href="global.html#jumpTo">jumpTo</a></li><li><a href="global.html#render">render</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Wed Oct 30 2024 09:48:26 GMT-0300 (Brasilia Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Wed Nov 06 2024 06:33:56 GMT-0300 (Brasilia Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>
