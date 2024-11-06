@@ -240,6 +240,7 @@ class Board extends React.Component {
    * Board constructor.
    * @param {Object} props component input.
    * @param {Array<String>} props.squares current array with their 9 squares.
+   * @param {Object<String, Array<Number>>} props.winner winner and configuration.
    * @param {Game#handleClick} props.onClick button onClick callback.
    * @extends {React.Component<Props>}
    * @see {@link https://reactjs.org/docs/react-component.html React.Component}
