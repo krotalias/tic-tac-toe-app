@@ -11,8 +11,8 @@
  *
  * @author Paulo Roma
  * @since 05/11/2024
- * @see <a href="https://raw.githubusercontent.com/krotalias/tic-tac-toe/main/src/index.jsx">source</a>
- * @see <a href="https://krotalias.github.io/tic-tac-toe/">link</a>
+ * @see <a href="../src/index.jsx">source</a>
+ * @see <a href="https://tic-tac-toe-app-self.vercel.app/">link</a>
  * @see {@link https://react.dev/learn/tutorial-tic-tac-toe Tutorial: Tic-Tac-Toe}
  */
 
