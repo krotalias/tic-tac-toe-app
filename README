@@ -1,5 +1,3 @@
-npx create-react-app tic-tac-toe
+npm create vite@latest
 
-npm start -> http://localhost:3000
-
-
+npx vite

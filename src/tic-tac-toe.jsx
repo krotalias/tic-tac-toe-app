@@ -13,9 +13,9 @@
  * It is a solved game with a forced draw assuming best play from both players.
  *
  * <p>This project was bootstrapped with
- * {@link https://create-react-app.dev/docs/getting-started Create React App}:</p>
+ * {@link https://vite.dev/guide/ Vite}:</p>
  * <ul>
- *    <li>yarn create react-app tic-tac-toe-app</li>
+ *    <li>npm create vite@latest</li>
  * </ul>
  *
  * <p><b>Important remark</b>: using React without {@link https://nodejs.dev/en/ nodejs}
@@ -39,8 +39,11 @@
  * it must be {@link https://create-react-app.dev/docs/deployment/ deployed} somehow.
  *
  * <p>Usage: </p>
- *  <li>To install {@link https://www.npmjs.com/package/jsdoc jsdoc}, yarn and {@link https://pnpm.io pnpm}:</li>
+ *  <li>To install {@link https://www.npmjs.com/package/jsdoc jsdoc},
+ * {@link https://www.npmjs.com/package/vite Vite},
+ * yarn and {@link https://pnpm.io pnpm}:</li>
  *  <ul>
+ *    <li>sudo npm install --global vite</li>
  *    <li>sudo npm install --global yarn</li>
  *    <li>sudo npm install -g jsdoc</li>
  *    <li>sudo npm install -g pnpm</li>
@@ -76,7 +79,7 @@
  *
  * @author Paulo Roma based on {@link https://opensource.fb.com|Meta Open Source}
  * @since 17/09/2021
- * @see <a href="../src/tic-tac-toe.js">source</a>
+ * @see <a href="../src/tic-tac-toe.jsx">source</a>
  * @see <a href="../package.json">package.json</a>
  * @see <a href="https://krotalias.github.io/cwdc/14-react/tic-tac-toe/tic-tac-toe.html">link browser</a>
  * @see <a href="https://tic-tac-toe-app-self.vercel.app">link vercel</a>
@@ -129,8 +132,6 @@ import vercel from "./vercel.png";
  * {@link https://create-react-app.dev/ CRA}.
  * However, React's new documentation, released on March 16, 2023,
  * no longer recommends CRA as the go-to solution for creating React applications.</p>
- *
- * <p>Nonetheless, this application still uses CRA.</p>
  *
  * @namespace React
  * @see {@link https://react.dev/learn/start-a-new-react-project Start a New React Project}
