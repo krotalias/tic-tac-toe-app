@@ -513,7 +513,7 @@ export default class Game extends React.Component {
     return (
       <div className="game">
         <div className="game-logo">
-          <a href="https://vercel.com/krotalias/tic-tac-toe-app">
+          <a href="https://vercel.com/krotalias-projects/tic-tac-toe-app">
             <img src={vercel} style={{ height: "32px" }} alt="vercel" />
           </a>
         </div>
